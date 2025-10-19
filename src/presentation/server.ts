@@ -38,6 +38,7 @@ export class Server {
     this.app.use(cors({
       origin: [
         'http://localhost:5173', //VITE REACT
+        'https://todo-list-demo.codiq.online',
       ]
     }));
 
