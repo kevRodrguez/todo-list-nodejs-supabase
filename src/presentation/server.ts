@@ -1,7 +1,7 @@
 import express, { Router } from 'express';
 import path from 'path';
 import { errorHandler } from '../middlewares/errorsHandler';
-
+import cors from 'cors'
 interface Options {
   port: number;
   routes: Router;
@@ -32,6 +32,14 @@ export class Server {
     //* Middlewares
     this.app.use(express.json()); // raw
     this.app.use(express.urlencoded({ extended: true })); // x-www-form-urlencoded
+
+
+    // CORS
+    this.app.use(cors({
+      origin: [
+        'http://localhost:5173', //VITE REACT
+      ]
+    }));
 
 
     //* Routes

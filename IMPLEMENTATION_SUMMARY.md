@@ -61,6 +61,7 @@ class TodoController {
 ### 5. **Base de Datos**
 
 **Tabla: `todos`**
+
 ```sql
 - id (SERIAL PRIMARY KEY)
 - title (VARCHAR 255) NOT NULL
@@ -92,6 +93,7 @@ DB_PORT=5432
 ```
 
 Para obtener estos datos en Supabase:
+
 - **Settings** → **Database** → **Connection String** → **Connection Pooling**
 
 ### 3. Instalar y Ejecutar
@@ -111,6 +113,7 @@ npm run dev
 ### Opción 1: Usar el archivo test-api.http
 
 Si tienes la extensión **REST Client** en VS Code:
+
 1. Abre el archivo `test-api.http`
 2. Haz clic en "Send Request" sobre cada petición
 
@@ -184,6 +187,7 @@ Supabase PostgreSQL
 ## 📝 Estructura de Respuestas
 
 ### Respuesta Exitosa
+
 ```json
 {
   "ok": true,
@@ -193,6 +197,7 @@ Supabase PostgreSQL
 ```
 
 ### Respuesta de Error
+
 ```json
 {
   "ok": false,
@@ -242,7 +247,7 @@ Supabase PostgreSQL
 
 4. **Índices**: Se crearon índices en `completed` y `created_at` para mejor rendimiento
 
-## 🎉 ¡Listo para Usar!
+## 🎉 ¡Listo para Usar
 
 Tu API de Todo List está completamente funcional y lista para ser probada. Sigue los pasos de configuración y ejecuta `npm run dev` para comenzar.
 

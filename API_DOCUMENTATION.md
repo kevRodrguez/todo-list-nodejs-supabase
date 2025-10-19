@@ -21,12 +21,14 @@ API REST para gestión de tareas (Todo List) construida con Node.js, Express, Ty
 ## 🔧 Instalación
 
 1. Clona el repositorio
+
 ```bash
 git clone <tu-repositorio>
 cd todo-list-be
 ```
 
 2. Instala las dependencias
+
 ```bash
 npm install
 ```
@@ -51,6 +53,7 @@ DB_PORT=5432
 Ve a tu proyecto de Supabase > SQL Editor y ejecuta el script ubicado en `database/schema.sql`
 
 5. Inicia el servidor de desarrollo
+
 ```bash
 npm run dev
 ```
@@ -58,16 +61,19 @@ npm run dev
 ## 📚 Endpoints de la API
 
 ### Base URL
+
 ```
 http://localhost:3000/api/todos
 ```
 
 ### Obtener todos los todos
+
 ```http
 GET /api/todos
 ```
 
 **Respuesta exitosa (200):**
+
 ```json
 {
   "ok": true,
@@ -85,11 +91,13 @@ GET /api/todos
 ```
 
 ### Obtener un todo por ID
+
 ```http
 GET /api/todos/:id
 ```
 
 **Respuesta exitosa (200):**
+
 ```json
 {
   "ok": true,
@@ -105,6 +113,7 @@ GET /api/todos/:id
 ```
 
 ### Crear un nuevo todo
+
 ```http
 POST /api/todos
 Content-Type: application/json
@@ -116,6 +125,7 @@ Content-Type: application/json
 ```
 
 **Respuesta exitosa (201):**
+
 ```json
 {
   "ok": true,
@@ -132,6 +142,7 @@ Content-Type: application/json
 ```
 
 ### Actualizar un todo
+
 ```http
 PUT /api/todos/:id
 Content-Type: application/json
@@ -144,6 +155,7 @@ Content-Type: application/json
 ```
 
 **Respuesta exitosa (200):**
+
 ```json
 {
   "ok": true,
@@ -160,11 +172,13 @@ Content-Type: application/json
 ```
 
 ### Alternar estado completado
+
 ```http
 PATCH /api/todos/:id/toggle
 ```
 
 **Respuesta exitosa (200):**
+
 ```json
 {
   "ok": true,
@@ -181,11 +195,13 @@ PATCH /api/todos/:id/toggle
 ```
 
 ### Eliminar un todo
+
 ```http
 DELETE /api/todos/:id
 ```
 
 **Respuesta exitosa (200):**
+
 ```json
 {
   "ok": true,
