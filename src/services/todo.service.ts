@@ -10,7 +10,7 @@ export class TodoService {
         const query = `
       SELECT id, title, description, completed, created_at, updated_at
       FROM todos
-      ORDER BY created_at DESC
+      ORDER BY completed ASC, created_at DESC
     `;
 
         const result = await pool.query(query);
